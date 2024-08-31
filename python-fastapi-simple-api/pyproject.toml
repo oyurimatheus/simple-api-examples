@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-simple-api"
+name = "python-fastapi-simple-api"
 version = "0.1.0"
 description = ""
 authors = ["Yuri Matheus <yurimatheusb@hotmail.com>"]
@@ -7,6 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+fastapi = "^0.111.1"
+opentelemetry-instrumentation-fastapi = "^0.46b0"
+
+[tool.poetry.group.test.dependencies]
+pytest-randomly = "^3.15.0"
+pytest = "^8.2.0"
 
 
 [build-system]
